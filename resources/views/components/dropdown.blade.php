@@ -1,5 +1,3 @@
-@props(['trigger'])
-
 <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl">
     <div x-data="{ show: false}" @click.away="show = false">
         <button
