@@ -12,7 +12,7 @@
     </x-slot:trigger>
 
     <x-dropdown-item 
-        href="/"
+        href="/?{{ http_build_query(request()->except('category', 'page')) }}"
         :active="request()->routeIs('home')"
     >All</x-dropdown-item>
     
